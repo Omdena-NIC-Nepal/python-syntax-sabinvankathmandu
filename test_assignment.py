@@ -51,3 +51,10 @@ def test_bitwise_ops():
     assert result["and"] == 8
     assert result["or"] == 14
     assert result["xor"] == 6
+
+def test_arithmetic_ops2():
+    result = arithmetic_ops(10, 0)
+    assert result["sum"] == 10
+    assert result["difference"] == 10
+    assert result["product"] == 0
+    assert result["quotient"] == None
