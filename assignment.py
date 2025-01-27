@@ -43,18 +43,12 @@ def arithmetic_ops(a, b):
         "quotient" : None if b == 0 else a / b
     }
 
-    pass
-
 def logical_ops(x, y):
-    """
-    Perform logical operations.
-    Args:
-        x (bool): First boolean
-        y (bool): Second boolean
-    Returns:
-        dict: Results of logical operations
-    """
-    pass
+    return {
+        "and" : x and y,
+        "or" : x or y,
+        "not_x" : not x
+    }
 
 def bitwise_ops(a, b):
     """
