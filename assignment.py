@@ -51,12 +51,9 @@ def logical_ops(x, y):
     }
 
 def bitwise_ops(a, b):
-    """
-    Perform bitwise operations.
-    Args:
-        a (int): First integer
-        b (int): Second integer
-    Returns:
-        dict: Results of bitwise operations
-    """
-    pass
+   return {
+       "and" : a & b,
+       "or" : a | b,
+       "xor" : a ^ b
+   }
+
