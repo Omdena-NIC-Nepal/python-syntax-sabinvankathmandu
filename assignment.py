@@ -36,11 +36,15 @@ def set_operations(list1, list2):
     return (set(list1) & set(list2))
 
 def arithmetic_ops(a, b):
+    try:
+        quotient = a / b
+    except ZeroDivisionError:
+        quotient = None
     return {
         "sum" : a + b,
         "difference" : a - b,
         "product" : a * b,
-        "quotient" : None if b == 0 else a / b
+        "quotient" : quotient
     }
 
 def logical_ops(x, y):
